@@ -1,14 +1,12 @@
-# Titulo del proyecto
+# ALWAYS_MUSIC
 
-Breve descripción del proyecto y su objetivo.
+Desafio evaluado en bootcamp Fullstack Javascript en Desafio Latam
 
 ## Descripción del proyecto
 
-¿Estás comenzando un proyecto pequeño, un desafío de programación o un tutorial, y necesitas una forma rápida y sencilla de crear documentación básica? ¡Esta plantilla README minimalista es para ti!
+Proyecto que implementa conexion a base de datos a través de node y paquete pg, en donde se resgistran estudiantes, editan, eliminan y muestran.
 
 ## Capturas de Pantalla del Proyecto
-
-Incluir capturas de pantalla o imágenes que muestren el proyecto en funcionamiento.
 
 Vista de estudiante consultado por rut
 ![Home](./assets/img/rut.png)
@@ -19,91 +17,42 @@ Vista de todos los estudiantes
 
 ## Prerrequisitos o Dependencias
 
-Lista de software y herramientas, incluyendo versiones, que necesitas para instalar y ejecutar este proyecto:
-
-- Sistema Operativo (por ejemplo, Ubuntu 20.04, Windows 10)
-- Lenguaje de programación (por ejemplo, Python 3.8)
-- Framework (por ejemplo, Django 3.1)
-- Base de datos (por ejemplo, PostgreSQL 12)
-- Otros...
+Se necesita las dependencias dotenv y pg.
 
 ## Instalación del Proyecto
 
-Una guía paso a paso sobre cómo configurar el entorno de desarrollo e instalar todas las dependencias.
 
 ```bash
 npm init -y
 ```
 
-Y así sucesivamente...
 
 ```bash
-npm i express pg dotenv axios
+npm i express pg dotenv pg
 ```
 
 ## Instrucciones para Ejecutar el Proyecto
 
-Instrucciones para ejecutar el proyecto una vez instalado.
+Ejecutar la instruccón que quiera realizar
 
 ```bash
-#
+node consultas agregar Nicolas 19747829 guitarra 5
 ```
-
-## Instrucciones para Cargar la Base de Datos o Migrar los Modelos
-
-Instrucciones necesario para cargar la base de datos o migrar los modelos de datos.
-
 ```bash
-#
+node consultas mostrar
 ```
-
-## Instrucciones para Cargar los Datos Semilla a la Base de Datos
-
-Comandos necesario para cargar los datos semilla a la base de datos.
-
 ```bash
-# paso 1
+node consultas consulta Nicolas 19747829
 ```
-
-Y así sucesivamente...
-
 ```bash
-# paso 2
+node consultas editar Nicolas 19747829 piano 2
+```
+```bash
+node consultas eliminar 19747829
 ```
 
-## Credenciales de Acceso
-
-### Para Usuario Tipo Administrador
-
-- Email: administrador@mail.com
-- Contraseña: Abc123#
-
-### Para Usuario Tipo User
-
-- Email: user@mail.com
-- Contraseña: Abc123#
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Williams Hernández** - *Trabajo Inicial* - [Williams Hernández](https://github.com/hernandw)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](https://github.com/juanito)
+```
 
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE.md](LICENSE) para detalles
-
----
-
-## Consejos Adicionales
-
-Aquí hay algunos consejos extra para aprovechar al máximo tu README:
-
-- Mantén cada sección lo más concisa posible. Evita la información innecesaria, ya que puede ser abrumadora para el lector.
-- Asegúrate de que tus instrucciones de instalación, despliegue sean detalladas y precisas. Si hay pasos adicionales que el lector necesita tomar (como instalar dependencias extra), asegúrate de
-incluirlos.
-- Los visuales (imágenes, GIFs) son muy útiles para transmitir rápidamente lo que hace tu proyecto y cómo usarlo. Si puedes, incluye capturas de pantalla de tu aplicación en acción o GIFs que
-demuestren su uso.
-
----
-
-⌨️ con ❤️ por [Williams Hernández](https://github.com/hernandw) 😊
